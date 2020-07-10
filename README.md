@@ -1,6 +1,6 @@
 # Angular-LoginApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.8.
+This project was generated with Angular 9.1.12 & [Angular CLI](https://github.com/angular/angular-cli) version 9.1.10.
 
 ## Development server
 
