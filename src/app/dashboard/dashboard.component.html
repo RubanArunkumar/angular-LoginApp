@@ -1,0 +1,30 @@
+<div>
+    <h3><span class="divider"></span> <a id ="link" routerLink ="/">Logout</a></h3>
+    <h3>{{ errorMessage }}</h3>
+    <!-- <ul>
+      <li *ngFor="let data of sampleTestData"><i>{{ data.name }}</i></li>
+    </ul> -->
+    <table>
+        <!-- <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Age</th>
+        </tr> -->
+        <!-- <tr *ngFor="let data of sampleTestData">
+            <td>{{data.id}}</td>
+            <td>{{data.name}}</td>
+            <td>{{data.age}}</td>
+        </tr> -->
+        <tr>
+            <th>MaturityPeroid(Yr)</th>
+            <th>InterestRate(%)</th>
+            <th>LastChangedTime</th>
+        </tr>
+        <tr *ngFor="let data of interestApiData">
+            <td>{{data.maturityPeriod}}</td>
+            <td>{{data.interestRate}}</td>
+            <td>{{data.lastUpdatedTime}}</td>
+        </tr>
+    </table>
+</div>
+

@@ -1,0 +1,19 @@
+<form ngNativeValidate #loginForm (submit)="loginUser($event)">
+    <div class="input">
+        <label>Username</label>
+        <input type = "text" required minlength="4">
+    </div>
+    <div class="input">
+        <label>Password</label>
+        <input type = "password" required minlength="4">
+    </div>
+    <div class="input">
+        <input type ="submit" value="Login">
+        <span class="divider"></span>
+        <input type ="button" (click)="clearForm(loginForm)" value="Reset">
+        <span class="divider"></span>
+    </div>
+    <div>
+        <label id="error">{{ errorMessage }}</label>
+    </div>
+</form>

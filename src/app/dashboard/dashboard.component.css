@@ -1,0 +1,53 @@
+div ul{
+    text-align: center;
+    padding: 20px 0;
+    font-size: 25px;
+    border-bottom: 2px solid #eee;
+}
+
+div h1 {
+    text-align: center;
+}
+
+div h3 {
+    text-align: center;
+}
+
+#link {
+    text-align: right;
+    font-size: 20px;
+}
+
+.divider{
+    width: 500px;
+    height:auto;
+    display:inline-block;
+}
+
+table, th , td  {
+    border: 1px solid grey;
+    width: 100px;
+    border-collapse: collapse;
+    padding: 8px;
+    text-align: center;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x:auto;
+  }
+  table tr:nth-child(odd) {
+    background-color: #f1f1f1;
+  }
+  table tr:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  @media screen and (max-width: 767px) {
+    table, th , td {
+        width: 100%;
+        margin-bottom: 15px;
+        overflow-y: hidden;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        border: 1px solid #ddd;
+    }
+}
