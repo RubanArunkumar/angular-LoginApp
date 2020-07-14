@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AK_LoginApp';
+  title = `AK Bank - People's Trust`;
 }
