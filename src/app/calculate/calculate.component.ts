@@ -37,8 +37,12 @@ export class CalculateComponent implements OnInit {
   }
 
   public clearForm(form: FormGroup) {
-    document.getElementById('success').innerHTML = null;
+    if(document.getElementById("success")){
+      document.getElementById('success').innerHTML = null;
+    } 
+  else if (document.getElementById("error")) {
     document.getElementById('error').innerHTML = null;
+  }
     form.reset();
     }
 }
