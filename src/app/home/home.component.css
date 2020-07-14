@@ -1,0 +1,39 @@
+:host {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+ul {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 15px;
+    border-bottom: 2px solid #eee;
+}
+
+.divider{
+    width:20px;
+    height:auto;
+    display:inline-block;
+}
+
+table, tr  {
+    border: 50px solid rgb(237, 238, 241);
+    width: 600px;
+    padding: 40px;
+    font-size: large;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x:auto;
+  }
+
+ th  {
+    width: 120px;
+    text-align: left;
+    padding: 3px;
+    font-size: medium;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x:auto;
+  }

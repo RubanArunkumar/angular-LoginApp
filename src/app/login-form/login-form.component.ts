@@ -25,7 +25,7 @@ export class LoginFormComponent implements OnInit {
       if (userName.toLowerCase() == 'admin' && password.toLowerCase() == 'admin')
       {
         this._userService.setUserLoggedIn();
-        this.router.navigate(['/dashboard']);
+        this.router.navigate(['/home']);
       }
       else
       {

@@ -13,6 +13,8 @@ import { UserService } from './user.service';
 import { AuthguardGuard } from './authguard.guard';
 import { SampleDataService } from './sample-data.service';
 import { HttpClientModule } from '@angular/common/http';
+import { HomeComponent } from './home/home.component';
+import { CalculateComponent } from './calculate/calculate.component';
 
 const appRoutes: Routes = [
   {
@@ -23,6 +25,16 @@ const appRoutes: Routes = [
     path: 'dashboard',
     canActivate: [ AuthguardGuard ],
     component: DashboardComponent
+  },
+  {
+    path: 'home',
+    canActivate: [ AuthguardGuard ],
+    component: HomeComponent
+  },
+  {
+    path: 'calculate',
+    canActivate: [ AuthguardGuard ],
+    component: CalculateComponent
   }
 ]
 
@@ -32,7 +44,9 @@ const appRoutes: Routes = [
     HeaderComponent,
     LoginFormComponent,
     FooterComponent,
-    DashboardComponent
+    DashboardComponent,
+    HomeComponent,
+    CalculateComponent
   ],
   imports: [
     BrowserModule,
