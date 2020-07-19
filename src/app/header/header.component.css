@@ -1,7 +1,13 @@
 header {
     text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
     padding: 20px 0;
-    font-size: 25px;
-    color: blue;
+    font-size: 24px;
+    color: rgb(3, 3, 24);
     border-bottom: 2px solid #eee;
+    position: initial;
+    top: 0;
+    width: 100%;
 }
+    

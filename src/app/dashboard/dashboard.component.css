@@ -30,9 +30,11 @@ table, th , td  {
     border-collapse: collapse;
     padding: 8px;
     text-align: center;
-    font-size: large;
+    font-size: medium;
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
     overflow-x:auto;
   }
   table tr:nth-child(odd) {
@@ -41,6 +43,13 @@ table, th , td  {
   table tr:nth-child(even) {
     background-color: #ffffff;
   }
+
+  div h3 a {
+    text-align: right;
+    font-size: 20px;
+    margin-top: -100px;
+    margin-left: 273px;
+}
 
   @media screen and (max-width: 767px) {
     table, th , td {

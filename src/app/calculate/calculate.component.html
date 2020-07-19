@@ -1,5 +1,5 @@
 <form ngNativeValidate #calculateForm (submit)="calculateInterest($event)">
-    <h3><a class ="link" routerLink ="/">Logout</a></h3>
+    <h3><a routerLink ="/">Logout</a></h3>
     <div>
         <label *ngIf="interestApiData.mortgageEligibility == true" id="success">You are eligible with monthly EMI - {{ interestApiData.monthlyCostAmount }}</label>
         <label *ngIf="interestApiData.mortgageEligibility == false" id="error">Sorry - You are not eligible for the Mortgage</label>
@@ -7,7 +7,7 @@
         <label id="error">{{ errorMessage }}</label>
     </div>
     <div class="input">
-        <label>AnnualIncomeAmount</label>
+        <label>Annual_IncomeAmount</label>
         <input type = "text" required>
     </div>
     <div class="input">
@@ -15,18 +15,18 @@
         <input type = "text" required>
     </div>
     <div class="input">
-        <label>TotalLoanValueAmount</label>
+        <label>Total_LoanValueAmount</label>
         <input type = "text" required>
     </div>
     <div class="input">
-        <label>TotalHomeValueAmount</label>
+        <label>Total_HomeValueAmount</label>
         <input type = "text" required>
     </div>
-    <div class="input">
-        <input type ="submit" value="Calculate">
+    <span class="divider"></span>
+    <div>
+        <input class ="submit" type ="submit" value="Calculate">
         <span class="divider"></span>
-        <span class="divider"></span>
-        <input type ="button" (click)="clearForm(calculateForm)" value="Reset">
+        <input class ="submit" type ="button" (click)="clearForm(calculateForm)" value="Reset">
         <span class="divider"></span>
         <span class="divider"></span>
     </div>
