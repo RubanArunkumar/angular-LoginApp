@@ -1,0 +1,75 @@
+:host {
+	flex-grow: 1;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+div.input {
+	position: relative;
+}
+
+div.input label {
+	position: absolute;
+	top: 0;
+	transform: translateY(-50%);
+	left: 10px;
+	background: white;
+	padding: 5px 2px;
+}
+
+div.input input {
+	padding: 10px 20px;
+	font-size: 25px;
+    outline: 0;
+    margin: 10 px;
+}
+
+input.submit  {
+	padding: 10px 10px;
+	font-size: 15px;
+    outline: 0;
+    margin: 5 px;
+}
+
+div.input {
+	margin-top: 20px;
+}
+
+#error {
+    font-size: large;
+    color: red;
+    font-style: italic;
+    font-weight: bold;
+    height:auto;
+    display:inline-block;
+    text-align: center;
+}
+
+.divider{
+    width:20px;
+    height:auto;
+    display:inline-block;
+}
+
+#success {
+    font-size: large;
+    color: green;
+    font-style: italic;
+    font-weight: bold;
+    height:auto;
+    display:inline-block;
+    text-align: center;
+}
+
+form h3 a {
+    text-align: right;
+    font-size: 20px;
+    margin-top: -100px;
+    margin-left: 270px;
+}
+
+form {
+    margin-top: auto;
+    margin-bottom: auto;
+}

@@ -15,6 +15,8 @@ import { SampleDataService } from './sample-data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { HomeComponent } from './home/home.component';
 import { CalculateComponent } from './calculate/calculate.component';
+import { OrdersComponent } from './orders/orders.component';
+import { TrackerComponent } from './tracker/tracker.component';
 
 const appRoutes: Routes = [
   {
@@ -37,9 +39,19 @@ const appRoutes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'tracker',
+    canActivate: [ AuthguardGuard ],
+    component: TrackerComponent
+  },
+  {
     path: 'calculate',
     canActivate: [ AuthguardGuard ],
     component: CalculateComponent
+  },
+  {
+    path: 'orders',
+    canActivate: [ AuthguardGuard ],
+    component: OrdersComponent
   }
 ]
 
@@ -51,6 +63,7 @@ const appRoutes: Routes = [
     FooterComponent,
     DashboardComponent,
     HomeComponent,
+    OrdersComponent,
     CalculateComponent
   ],
   imports: [

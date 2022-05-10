@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../user.service';
 import { SampleDataService } from '../sample-data.service';
+import { SelectorMatcher } from '@angular/compiler';
+// import { Http2ServerRequest } from 'http2';
 
 @Component({
   selector: 'app-dashboard',
@@ -16,16 +18,9 @@ export class DashboardComponent implements OnInit {
   constructor(private user: UserService,
               private sampleData: SampleDataService) { }
 
-  // ngOnInit(): void {
-  //   this.sampleData.getDataHttpService()
-  //                  .subscribe((data:any[]) => this.sampleTestData = data,
-  //                  (error: string) => this.errorMessage = error);
-  // }
-
   ngOnInit(): void {
-    this.sampleData.getInterestApiHttpService()
-                   .subscribe((data:any[]) => this.interestApiData = data,
-                   (error: string) => this.errorMessage = error);
+  this.sampleData.getDataHttpService()
+     .subscribe((data:any[]) => this.sampleTestData = data,
+     (error: string) => this.errorMessage = error);
   }
-
-}
+  }
